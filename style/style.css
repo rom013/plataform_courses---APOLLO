@@ -1,0 +1,221 @@
+:root{
+    --primary: #064e3b;
+    --secundary: #22c55e;
+    --tertiary: #042f2e;
+    --white-color: #ffffff;
+    --black-color: #18181b;
+    --black-secundary-color: #27272a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+body{
+    background: var(--black-color);
+    min-height: 100vh;
+}
+
+.page-header{
+    width: 100%;
+    padding: 24px;
+    background: var(--primary);
+    color: var(--white-color)
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 800;
+    user-select: none;
+}
+
+.page-header .btn-login{
+    background:rgba(34, 197, 94, 0.5);
+    border-left: 6px solid var(--secundary);
+    color: var(--white-color);
+    padding: 8px 24px;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+
+}
+
+.profile-container{
+    cursor: pointer;
+    position: relative;
+    padding: 8px 0;
+}
+.profile-container:hover .profile-info, .profile-info:hover{
+    display: flex;
+}
+
+.profile-info{
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    top: 30px;
+    padding: 24px 16px;
+    background: var(--black-secundary-color);
+    border-radius: 8px;
+    border: 1px solid #404040;
+    width: max-content;
+
+}
+
+.profile-info::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    rotate: 45deg;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: var(--black-secundary-color);
+    display: block;
+}
+
+.profile-info a:visited, .profile-info a{
+    color: var(--white-color);
+}
+.profile-info a:hover{
+    color: var(--secundary);
+}
+
+.container-courses{
+    max-width: 1200px;
+    margin: 40px auto;
+    background: var(--black-secundary-color);
+    padding: 32px 24px;
+    border-radius: 4px;
+}
+
+.grid-courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.card-course{
+    background: var(--white-color);
+    /* padding: 24px; */
+    min-width: 350px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+}
+
+.card-course .header-card{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding: 24px 24px 8px 24px;
+    border-bottom: 1px solid #909090;
+}
+
+.card-course .header-card .img-course{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    left: 18px;
+    bottom: -30px;
+    overflow: hidden;
+}
+.card-course .header-card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-course .main-card{
+    padding: 8px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-course .main-card .discipline{
+    color: #71717a;
+    font-size: 16px;
+}
+
+.card-course .main-card .title-course{
+    font-size: 24px;
+    line-height: 18px;
+}
+.card-course .main-card .course-cost{
+    font-size: 16px;
+    color: var(--secundary);
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.card-course .main-card .createdBy{
+    color: #71717a;
+    font-size: 12px;
+}
+
+.subtitle{
+    color: var(--white-color);
+    margin-bottom: 24px;
+    width: 100%;
+    border-bottom: 1px solid var(--secundary);
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-size: 24px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px
+}
+
+.time input{
+    width: 32px;
+    text-align: center;
+}
+
+#courseCost{
+    width: 80px;
+}
+
+input, input:focus,select, select:focus, button, button:focus {
+    border: none;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}

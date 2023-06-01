@@ -1,0 +1,167 @@
+/* <!-- by Romullo --> */
+
+body{
+    background: #18181b;
+    min-height: 100vh;
+    background-image: url(https://global-uploads.webflow.com/61d83a2ebb0ae01ab96e841a/638a35f4338a14614a47d69b_BG-hero-Ignite-Lab.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-signup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    position: absolute;
+    inset: 0;
+    gap: 64px;
+}
+.container-signup{
+    width: 500px;
+    background: #18181b;
+    padding: 2rem 1.2rem;
+    border-radius: 8px;
+    margin-right: 64px;
+}
+
+.container-content{
+    flex: 1 1 0;
+    max-width: 600px;
+    background: rgba(0,0,0,.4);
+    backdrop-filter: blur(4px);
+    padding: 32px;
+    border-radius: 8px;
+    color: #ffffff
+}
+
+.container-content h1, .container-content h1 > span{
+    font-size: 32px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.container-content h1 > span{
+    color: #a3e635;
+}
+.container-content p{
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.title{
+    font-size: 2.5rem;
+    color:#ffffff;
+}
+
+.form-signup{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+input{
+    border:none;
+    outline: none;
+}
+input[type="text"], .form-signup input[type="password"]{
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    background: #27272a;
+    border: #3f3f46 solid 2px;
+    color: #ffffff;
+    transition: .7s all;
+}
+.form-signup input[type="text"]:focus, .form-signup input[type="password"]:focus, .input-style:focus{
+    box-shadow: 0 0 0 2px rgba(22, 163, 74, .5);
+}
+
+.btn-sign{
+    background:rgba(34, 197, 94, 0.5);
+    border-left: 6px solid var(--secundary);
+    color: var(--white-color);
+    padding: 8px 24px;
+    border-radius: 2px;
+    -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    margin-top: 24px;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .7s;
+}
+.btn-sign:hover{
+    background: rgba(34, 197, 94, 1);
+}
+
+.btn-sign:disabled{
+    opacity: .2;
+    cursor: default;
+}
+
+.form-signup .container-pass input{
+    width: 100%;
+}
+
+.form-signup .container-pass div{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #ffffff;
+}
+
+.form-signup .container-pass div span{
+    font-size: 12px;
+    cursor: default;
+}
+
+.error{
+    color: #be123c;
+    width: 100%;
+    text-align: center;
+}
+
+.error-input{
+    border: 2px #be123c solid !important
+}
+input.error-input:focus{
+    box-shadow: 0 0 0 2px rgba(190, 18, 61, 0.5) !important;
+    border: 2px #be123c solid !important
+}
+
+.itHas{
+    text-decoration: line-through;
+    opacity: .3;
+    transition: .7s;
+}
+
+.link-form{
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* =x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x */
+
+.make-wather{
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    opacity: .2;
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* <!-- by Romullo --> */
